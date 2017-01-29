@@ -5,6 +5,8 @@
  */
 package com.sv.udb.froms;
 
+import com.sv.udb.clases.Ejercicio1;
+
 /**
  *
  * @author Luis
@@ -73,6 +75,11 @@ public class FrmEjercicio1 extends javax.swing.JFrame {
         );
 
         btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
 
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -111,9 +118,22 @@ public class FrmEjercicio1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        // TODO add your handling code here:
-        
+     Ejercicio1 obj = new Ejercicio1();
+     obj.setNumBase(Integer.parseInt(txtNumB.getText()));
+     obj.setNumPont(Integer.parseInt(txtNumP.getText()));
+     obj.getResultado();
+     this.mthLimpiar();
+     
     }//GEN-LAST:event_btnCalcularActionPerformed
+ private void mthLimpiar()
+ {
+ txtNumB.setText("");
+ txtNumP.setText("");
+ txtNumB.setFocusable(true);
+ }
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
