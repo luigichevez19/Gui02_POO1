@@ -5,7 +5,9 @@
  */
 package com.sv.udb.froms;
 
+import java.awt.Color;
 import javax.swing.JButton;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /**
@@ -13,7 +15,7 @@ import javax.swing.JTextField;
  * @author Luis
  */
 public class FrmEjercicio3 extends javax.swing.JFrame {
-
+JButton boton = new JButton();
     /**
      * Creates new form FrmEjercicio3
      */
@@ -53,11 +55,11 @@ public class FrmEjercicio3 extends javax.swing.JFrame {
         jpnFigura.setLayout(jpnFiguraLayout);
         jpnFiguraLayout.setHorizontalGroup(
             jpnFiguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 271, Short.MAX_VALUE)
         );
         jpnFiguraLayout.setVerticalGroup(
             jpnFiguraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 203, Short.MAX_VALUE)
+            .addGap(0, 248, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jpnDatosLayout = new javax.swing.GroupLayout(jpnDatos);
@@ -68,10 +70,10 @@ public class FrmEjercicio3 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jpnFigura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnDatosLayout.createSequentialGroup()
-                .addContainerGap(146, Short.MAX_VALUE)
+            .addGroup(jpnDatosLayout.createSequentialGroup()
+                .addGap(97, 97, 97)
                 .addComponent(btnCrear)
-                .addGap(139, 139, 139))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jpnDatosLayout.setVerticalGroup(
             jpnDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,19 +95,63 @@ public class FrmEjercicio3 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jpnDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jpnDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
-    JButton boton = new JButton("Soy un boton");
-    boton.setVisible(true);
+    jpnFigura.add(boton);
+     boton.setVisible(true);
     boton.setSize(100,45);
     boton.setLocation(100, 300);
-    this.add(boton);
-    this.validate();
+    int x,y;
+    x=30;
+    y=50;
+    int indi=4;
+    for (int i=0;i<16;i++) 
+    {
+        if(i == indi)
+        {
+        indi=indi + 4;
+        x=30;
+        y=y+55;
+        }
+        JTextArea jB = new JTextArea();
+        jB.setBounds(x,y,30,30);
+        jB.setBackground(Color.BLACK);
+        jB.setForeground(Color.white);
+        jB.setText("***");
+        jpnFigura.add(jB, null);
+        jB.setVisible(true);
+        jpnFigura.validate();
+        x= x+55;
+    }
+    x=60;
+    y=26;
+    int indi2=4;
+    for (int i=0;i<16;i++) 
+    {
+        if(i == indi2)
+        {
+        indi2= indi2 + 4;
+        x=60;
+        y=y+55;
+        }
+        JTextArea jB = new JTextArea();
+        jB.setBounds(x,y,30,30);
+        jB.setBackground(Color.BLACK);
+        jB.setForeground(Color.white);
+         jB.setText("***");
+        jpnFigura.add(jB, null);
+        jB.setVisible(true);
+        jpnFigura.validate();
+        x= x+55;
+    }
+    jpnFigura.repaint();
     }//GEN-LAST:event_btnCrearActionPerformed
 
     /**

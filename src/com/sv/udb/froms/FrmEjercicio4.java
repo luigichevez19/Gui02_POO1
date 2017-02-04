@@ -5,9 +5,6 @@
  */
 package com.sv.udb.froms;
 
-import java.awt.Color;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
