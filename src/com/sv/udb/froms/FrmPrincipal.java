@@ -30,6 +30,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         bnEjerc1 = new javax.swing.JMenu();
         bnEjerc2 = new javax.swing.JMenu();
+        btnEjerc3 = new javax.swing.JMenu();
+        btnEjerc4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia02_POO1//Luis_Chévez");
@@ -49,6 +51,22 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(bnEjerc2);
+
+        btnEjerc3.setText("Ejercicio3");
+        btnEjerc3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjerc3MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjerc3);
+
+        btnEjerc4.setText("Ejercicio 4");
+        btnEjerc4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjerc4MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjerc4);
 
         setJMenuBar(jMenuBar1);
 
@@ -76,6 +94,17 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmEjercicio2 obj = new FrmEjercicio2();
        obj.setVisible(true);
     }//GEN-LAST:event_bnEjerc2MouseClicked
+
+    private void btnEjerc3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjerc3MouseClicked
+    FrmEjercicio3 obj = new FrmEjercicio3();
+    obj.setVisible(true);
+
+    }//GEN-LAST:event_btnEjerc3MouseClicked
+
+    private void btnEjerc4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjerc4MouseClicked
+    FrmEjercicio4 obj = new FrmEjercicio4();
+    obj.setVisible(true);
+    }//GEN-LAST:event_btnEjerc4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -115,6 +144,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu bnEjerc1;
     private javax.swing.JMenu bnEjerc2;
+    private javax.swing.JMenu btnEjerc3;
+    private javax.swing.JMenu btnEjerc4;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }

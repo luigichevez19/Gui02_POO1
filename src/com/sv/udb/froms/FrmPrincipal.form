@@ -20,6 +20,22 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bnEjerc2MouseClicked"/>
           </Events>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="btnEjerc3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ejercicio3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEjerc3MouseClicked"/>
+          </Events>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="btnEjerc4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ejercicio 4"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEjerc4MouseClicked"/>
+          </Events>
+        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>
