@@ -10,10 +10,7 @@ package com.sv.udb.froms;
  * @author Luis
  */
 public class FrmEjercicio5 extends javax.swing.JFrame {
-public String contra_2;
-public Integer contra2;
-public Integer Intento;
-public Integer contador;
+
     /**
      * Creates new form FrmEjercicio5
      */
@@ -30,263 +27,57 @@ public Integer contador;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnUno = new javax.swing.JButton();
-        btnDos = new javax.swing.JButton();
-        btnTres = new javax.swing.JButton();
-        btnSeis = new javax.swing.JButton();
-        btnCinco = new javax.swing.JButton();
-        btnCuatro = new javax.swing.JButton();
-        btnSiete = new javax.swing.JButton();
-        btnOcho = new javax.swing.JButton();
-        btnNueve = new javax.swing.JButton();
-        btnCero = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        lblUno = new javax.swing.JLabel();
+        lblDos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnUno.setText("1");
-        btnUno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUnoActionPerformed(evt);
-            }
-        });
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Cakculadora Basica"));
 
-        btnDos.setText("2");
-        btnDos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDosActionPerformed(evt);
-            }
-        });
+        lblUno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486250404_number-one.png"))); // NOI18N
 
-        btnTres.setText("3");
-        btnTres.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTresActionPerformed(evt);
-            }
-        });
+        lblDos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486250641_number-two.png"))); // NOI18N
 
-        btnSeis.setText("6");
-        btnSeis.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSeisActionPerformed(evt);
-            }
-        });
-
-        btnCinco.setText("5");
-        btnCinco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCincoActionPerformed(evt);
-            }
-        });
-
-        btnCuatro.setText("4");
-        btnCuatro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCuatroActionPerformed(evt);
-            }
-        });
-
-        btnSiete.setText("7");
-        btnSiete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSieteActionPerformed(evt);
-            }
-        });
-
-        btnOcho.setText("8");
-        btnOcho.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOchoActionPerformed(evt);
-            }
-        });
-
-        btnNueve.setText("9");
-        btnNueve.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNueveActionPerformed(evt);
-            }
-        });
-
-        btnCero.setText("0");
-        btnCero.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCeroActionPerformed(evt);
-            }
-        });
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(lblUno)
+                .addGap(18, 18, 18)
+                .addComponent(lblDos)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblUno)
+                    .addComponent(lblDos))
+                .addContainerGap(171, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(113, 113, 113)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnCero, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnCuatro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-                                .addComponent(btnUno, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnSiete, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGap(18, 18, 18)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnCinco, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                                .addComponent(btnDos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnOcho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGap(12, 12, 12)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnTres, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                        .addComponent(btnSeis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnNueve, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(114, 114, 114)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(77, 77, 77)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnDos)
-                        .addComponent(btnTres)
-                        .addComponent(btnUno))
-                    .addGap(18, 18, 18)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnCinco)
-                        .addComponent(btnSeis)
-                        .addComponent(btnCuatro))
-                    .addGap(18, 18, 18)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnOcho)
-                        .addComponent(btnNueve)
-                        .addComponent(btnSiete))
-                    .addGap(18, 18, 18)
-                    .addComponent(btnCero)
-                    .addContainerGap(77, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnoActionPerformed
-        if(contra_2 == null || (contra_2.equals("")))
-        {
-            contra_2 =btnUno.getText();
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnUno.getText());
-        }
-       
-    }//GEN-LAST:event_btnUnoActionPerformed
-
-    private void btnDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDosActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnDos.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnDos.getText());
-        }
-       
-    }//GEN-LAST:event_btnDosActionPerformed
-
-    private void btnTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTresActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnTres.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnTres.getText());
-        }
-       
-    }//GEN-LAST:event_btnTresActionPerformed
-
-    private void btnSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeisActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnSeis.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnSeis.getText());
-        }
-       
-    }//GEN-LAST:event_btnSeisActionPerformed
-
-    private void btnCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCincoActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnCinco.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 +(btnCinco.getText());
-        }
-       
-    }//GEN-LAST:event_btnCincoActionPerformed
-
-    private void btnCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuatroActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnCuatro.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnCuatro.getText());
-        }
-       
-    }//GEN-LAST:event_btnCuatroActionPerformed
-
-    private void btnSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSieteActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnSiete.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnSiete.getText());
-        }
-       
-    }//GEN-LAST:event_btnSieteActionPerformed
-
-    private void btnOchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOchoActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnOcho.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnOcho.getText());
-        }
-       
-    }//GEN-LAST:event_btnOchoActionPerformed
-
-    private void btnNueveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNueveActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnNueve.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnNueve.getText());
-        }
-       
-    }//GEN-LAST:event_btnNueveActionPerformed
-
-    private void btnCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCeroActionPerformed
-        if(contra_2 == null || contra_2.equals("") )
-        {
-            contra_2 =(btnCero.getText());
-        }
-        else
-        {
-            contra_2 = contra_2 + (btnCero.getText());
-        }
-       
-    }//GEN-LAST:event_btnCeroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -324,15 +115,8 @@ public Integer contador;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCero;
-    private javax.swing.JButton btnCinco;
-    private javax.swing.JButton btnCuatro;
-    private javax.swing.JButton btnDos;
-    private javax.swing.JButton btnNueve;
-    private javax.swing.JButton btnOcho;
-    private javax.swing.JButton btnSeis;
-    private javax.swing.JButton btnSiete;
-    private javax.swing.JButton btnTres;
-    private javax.swing.JButton btnUno;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblDos;
+    private javax.swing.JLabel lblUno;
     // End of variables declaration//GEN-END:variables
 }
