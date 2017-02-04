@@ -12,8 +12,11 @@ package com.sv.udb.clases;
 public class Ejercicio5 {
 public String num;
 public String num2;
+public Double nume;
+public Double nume2;
 public Double Memoria;
-public  Double Resultado;
+public Double Resultado;
+
     public String getNum() {
         return num;
     }
@@ -30,11 +33,27 @@ public  Double Resultado;
         this.num2 = num2;
     }
 
-    public double getMemoria() {
+    public Double getNume() {
+        return nume;
+    }
+
+    public void setNume(Double nume) {
+        this.nume = nume;
+    }
+
+    public Double getNume2() {
+        return nume2;
+    }
+
+    public void setNume2(Double nume2) {
+        this.nume2 = nume2;
+    }
+
+    public Double getMemoria() {
         return Memoria;
     }
 
-    public void setMemoria(double Memoria) {
+    public void setMemoria(Double Memoria) {
         this.Memoria = Memoria;
     }
 
@@ -45,27 +64,28 @@ public  Double Resultado;
     public void setResultado(Double Resultado) {
         this.Resultado = Resultado;
     }
+    
     public double Suma(double num,double num2)
     {
-     this.Resultado = num + num2;
+     this.Resultado = nume + nume2;
      setMemoria(Resultado);
     return 0;
     }
     public double Resta(double num,double num2)
     {
-    this.Resultado = num - num2;
+    this.Resultado = nume - nume2;
     setMemoria(Resultado);
     return 0;
     }
     public double Multiplicacion(double num,double num2)
     {
-    this.Resultado = num * num2;
+    this.Resultado = nume * nume2;
     setMemoria(Resultado);
     return 0;
     }
     public double Divicion(double num,double num2)
     {
-    this.Resultado = num / num2;
+    this.Resultado = nume / nume2;
         setMemoria(Resultado);
     return 0;
     }

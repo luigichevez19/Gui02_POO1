@@ -32,6 +32,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         bnEjerc2 = new javax.swing.JMenu();
         btnEjerc3 = new javax.swing.JMenu();
         btnEjerc4 = new javax.swing.JMenu();
+        btnEjerc5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guia02_POO1//Luis_Chévez");
@@ -52,7 +53,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         jMenuBar1.add(bnEjerc2);
 
-        btnEjerc3.setText("Ejercicio3");
+        btnEjerc3.setText("Ejercicio 3");
         btnEjerc3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnEjerc3MouseClicked(evt);
@@ -68,6 +69,14 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         jMenuBar1.add(btnEjerc4);
 
+        btnEjerc5.setText("Ejercicio 5");
+        btnEjerc5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEjerc5MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(btnEjerc5);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -78,7 +87,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 62, Short.MAX_VALUE)
         );
 
         pack();
@@ -105,6 +114,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
     FrmEjercicio4 obj = new FrmEjercicio4();
     obj.setVisible(true);
     }//GEN-LAST:event_btnEjerc4MouseClicked
+
+    private void btnEjerc5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEjerc5MouseClicked
+    FrmEjercicio5 obj = new FrmEjercicio5();
+    obj.setVisible(true);
+    }//GEN-LAST:event_btnEjerc5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -146,6 +160,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu bnEjerc2;
     private javax.swing.JMenu btnEjerc3;
     private javax.swing.JMenu btnEjerc4;
+    private javax.swing.JMenu btnEjerc5;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
