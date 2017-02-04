@@ -33,7 +33,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -56,60 +56,60 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="btnCero" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="btnCuatro" alignment="0" pref="47" max="32767" attributes="0"/>
-                              <Component id="btnUno" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnSiete" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnCinco" pref="48" max="32767" attributes="0"/>
-                              <Component id="btnDos" max="32767" attributes="0"/>
-                              <Component id="btnOcho" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="btnCuatro" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnUno" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnSiete" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="btnCero" max="32767" attributes="0"/>
+                      <Component id="btnCinco" max="32767" attributes="0"/>
+                      <Component id="btnDos" max="32767" attributes="0"/>
+                      <Component id="btnOcho" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnTres" pref="48" max="32767" attributes="0"/>
+                      <Component id="btnTres" max="32767" attributes="0"/>
                       <Component id="btnSeis" max="32767" attributes="0"/>
                       <Component id="btnNueve" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="lblInfo" min="-2" max="-2" attributes="0"/>
-                      <Component id="jrbUno" min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                          <Component id="jrbUno" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jrbDos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jrbTres" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jrbCuatro" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                          <Component id="lblInfo" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrbDos" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrbTres" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jrbCuatro" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lblInfo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jrbUno" min="-2" max="-2" attributes="0"/>
                       <Component id="jrbDos" min="-2" max="-2" attributes="0"/>
                       <Component id="jrbTres" min="-2" max="-2" attributes="0"/>
                       <Component id="jrbCuatro" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                  <Component id="lblInfo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnDos" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -128,9 +128,9 @@
                       <Component id="btnNueve" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnSiete" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnCero" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -138,7 +138,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnDos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250641_number-two.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDosActionPerformed"/>
@@ -146,7 +148,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnUno">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250404_number-one.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUnoActionPerformed"/>
@@ -154,7 +158,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnTres">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250657_number-three.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTresActionPerformed"/>
@@ -162,7 +168,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCuatro">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250666_number-four.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCuatroActionPerformed"/>
@@ -170,7 +178,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCinco">
           <Properties>
-            <Property name="text" type="java.lang.String" value="5"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250677_number-five.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCincoActionPerformed"/>
@@ -178,7 +188,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnSeis">
           <Properties>
-            <Property name="text" type="java.lang.String" value="6"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250685_number-six.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSeisActionPerformed"/>
@@ -186,7 +198,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnSiete">
           <Properties>
-            <Property name="text" type="java.lang.String" value="7"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250697_number-seven.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSieteActionPerformed"/>
@@ -194,7 +208,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnOcho">
           <Properties>
-            <Property name="text" type="java.lang.String" value="8"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250709_number-eight.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOchoActionPerformed"/>
@@ -202,7 +218,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnNueve">
           <Properties>
-            <Property name="text" type="java.lang.String" value="9"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250726_number-nine.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNueveActionPerformed"/>
@@ -210,7 +228,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCero">
           <Properties>
-            <Property name="text" type="java.lang.String" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486250743_number-ten.png"/>
+            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCeroActionPerformed"/>
@@ -221,6 +241,9 @@
         <Component class="javax.swing.JRadioButton" name="jrbDos">
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrbTres">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbTresActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblInfo">
           <Properties>
@@ -228,6 +251,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrbCuatro">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbCuatroActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
