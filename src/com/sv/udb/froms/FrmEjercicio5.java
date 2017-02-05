@@ -20,8 +20,8 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     
     Ejercicio5 obj = new Ejercicio5();
     int indicador;
-      String indi;
-      String numero;
+    String indi;
+    int operador;
     public FrmEjercicio5() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -56,6 +56,8 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
         lblLess = new javax.swing.JLabel();
         lblDivisions = new javax.swing.JLabel();
         lblMultiply = new javax.swing.JLabel();
+        lblErarse = new javax.swing.JLabel();
+        lblClear = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Ejercicio 5");
@@ -163,10 +165,34 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
         });
 
         lblLess.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486271380_Less.png"))); // NOI18N
+        lblLess.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblLessMouseClicked(evt);
+            }
+        });
 
         lblDivisions.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486271474_division.png"))); // NOI18N
+        lblDivisions.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDivisionsMouseClicked(evt);
+            }
+        });
 
         lblMultiply.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486271642_multiplication.png"))); // NOI18N
+        lblMultiply.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMultiplyMouseClicked(evt);
+            }
+        });
+
+        lblErarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486273994_locationbar_erase.png"))); // NOI18N
+        lblErarse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblErarseMouseClicked(evt);
+            }
+        });
+
+        lblClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486274203_letter_C_red.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -175,7 +201,6 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -207,8 +232,13 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(lblEquals)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblMultiply)))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                                .addComponent(lblMultiply)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblErarse)
+                            .addComponent(lblClear)))
+                    .addComponent(txtDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -216,18 +246,26 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(txtDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblTres)
+                        .addComponent(lblUno)
+                        .addComponent(lblDos)
+                        .addComponent(lblPlus))
+                    .addComponent(lblErarse))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTres)
-                    .addComponent(lblUno)
-                    .addComponent(lblDos)
-                    .addComponent(lblPlus))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblLess)
-                    .addComponent(lblCinco)
-                    .addComponent(lblSeis)
-                    .addComponent(lblCuatro))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblLess)
+                            .addComponent(lblCinco)
+                            .addComponent(lblSeis)
+                            .addComponent(lblCuatro))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblClear)
+                        .addGap(20, 20, 20)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblNueve)
                     .addComponent(lblOcho)
@@ -252,15 +290,13 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -590,13 +626,55 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
 
     private void lblEqualsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEqualsMouseClicked
     txtDisplay.setText(obj.getResultado().toString());
+    switch(this.operador)
+    {
+        case 1:
+            obj.Suma(obj.getNume(), obj.getNume2());
+            break;
+            case 2:
+             obj.Resta(obj.getNume(), obj.getNume2());
+            break;
+                case 3:
+             obj.Divicion(obj.getNume(), obj.getNume2());
+            break;
+                    case 4:
+             obj.Multiplicacion(obj.getNume(), obj.getNume2());
+            break;
+    }
     }//GEN-LAST:event_lblEqualsMouseClicked
 
     private void lblDotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDotMouseClicked
     
     if (!(txtDisplay.getText().contains(".")))
     {
-    txtDisplay.setText(txtDisplay.getText() + ".");
+     if(indicador == 0)
+    {
+    if (obj.getNum() != null)
+    {
+    indi = (obj.getNum())+ ".";
+    obj.setNum(indi);
+    txtDisplay.setText(obj.getNum());
+    }
+    else
+    {
+     obj.setNum(".");
+    txtDisplay.setText(obj.getNum());
+    }
+    }
+    else if(indicador == 1)
+    {
+    if (obj.getNum2()!= null)
+    {
+    indi = (obj.getNum2())+ ".";
+    obj.setNum2(indi);
+    txtDisplay.setText(obj.getNum2());
+    }
+    else
+    {
+     obj.setNum2(".");
+    txtDisplay.setText(obj.getNum2());
+    }
+    }
     }
     }//GEN-LAST:event_lblDotMouseClicked
 
@@ -605,8 +683,30 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtDisplayKeyReleased
 
     private void lblPlusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPlusMouseClicked
-    
+    indicador = 1;
+    operador=1;
     }//GEN-LAST:event_lblPlusMouseClicked
+
+    private void lblErarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErarseMouseClicked
+    obj.setNum(null);
+    obj.setNum2(null);
+    indicador = 0;
+    }//GEN-LAST:event_lblErarseMouseClicked
+
+    private void lblLessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLessMouseClicked
+    indicador = 1;
+    operador=2;
+    }//GEN-LAST:event_lblLessMouseClicked
+
+    private void lblDivisionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDivisionsMouseClicked
+   indicador = 1;
+    operador=3;
+    }//GEN-LAST:event_lblDivisionsMouseClicked
+
+    private void lblMultiplyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMultiplyMouseClicked
+     indicador = 1;
+    operador=4;
+    }//GEN-LAST:event_lblMultiplyMouseClicked
 
     /**
      * @param args the command line arguments
@@ -647,11 +747,13 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblCero;
     private javax.swing.JLabel lblCinco;
+    private javax.swing.JLabel lblClear;
     private javax.swing.JLabel lblCuatro;
     private javax.swing.JLabel lblDivisions;
     private javax.swing.JLabel lblDos;
     private javax.swing.JLabel lblDot;
     private javax.swing.JLabel lblEquals;
+    private javax.swing.JLabel lblErarse;
     private javax.swing.JLabel lblLess;
     private javax.swing.JLabel lblMultiply;
     private javax.swing.JLabel lblNueve;

@@ -27,7 +27,6 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -35,8 +34,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -57,8 +55,7 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtDisplay" min="-2" pref="238" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="lblCuatro" min="-2" max="-2" attributes="0"/>
@@ -94,15 +91,21 @@
                                       <Component id="lblDivisions" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblEquals" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="lblMultiply" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblErarse" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblClear" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
+                      <Component id="txtDisplay" min="-2" pref="238" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -112,20 +115,32 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtDisplay" min="-2" pref="41" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblTres" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblUno" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblDos" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblPlus" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblTres" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblUno" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDos" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPlus" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lblErarse" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lblLess" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCinco" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblSeis" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCuatro" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblLess" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCinco" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSeis" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCuatro" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblClear" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lblNueve" min="-2" max="-2" attributes="0"/>
                       <Component id="lblOcho" min="-2" max="-2" attributes="0"/>
@@ -294,6 +309,9 @@
               <Image iconType="3" name="/com/sv/udb/icon/1486271380_Less.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblLessMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblDivisions">
           <Properties>
@@ -301,11 +319,34 @@
               <Image iconType="3" name="/com/sv/udb/icon/1486271474_division.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblDivisionsMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblMultiply">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/sv/udb/icon/1486271642_multiplication.png"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblMultiplyMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblErarse">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486273994_locationbar_erase.png"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblErarseMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblClear">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/sv/udb/icon/1486274203_letter_C_red.png"/>
             </Property>
           </Properties>
         </Component>
