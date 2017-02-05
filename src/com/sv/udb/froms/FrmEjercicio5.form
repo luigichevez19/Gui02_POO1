@@ -349,6 +349,9 @@
               <Image iconType="3" name="/com/sv/udb/icon/1486274203_letter_C_red.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblClearMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

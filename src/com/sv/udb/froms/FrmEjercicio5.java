@@ -193,6 +193,11 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
         });
 
         lblClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sv/udb/icon/1486274203_letter_C_red.png"))); // NOI18N
+        lblClear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblClearMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -579,14 +584,17 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     }
     else if(indicador == 1)
     {
+     
     if (obj.getNum2()!= null)
     {
+        JOptionPane.showMessageDialog(this, "Hello world");
     indi = (obj.getNum2())+ "9";
     obj.setNum2(indi);
     txtDisplay.setText(obj.getNum2());
     }
     else
     {
+        
      obj.setNum2("9");
     txtDisplay.setText(obj.getNum2());
     }
@@ -625,7 +633,7 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     }//GEN-LAST:event_lblCeroMouseClicked
 
     private void lblEqualsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEqualsMouseClicked
-    txtDisplay.setText(obj.getResultado().toString());
+   
     switch(this.operador)
     {
         case 1:
@@ -641,6 +649,14 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
              obj.Multiplicacion(obj.getNume(), obj.getNume2());
             break;
     }
+    
+    txtDisplay.setText(obj.getResultado().toString());
+    obj.setNum(obj.getResultado().toString());
+        try {
+            obj.setNum2(null);
+        } catch (Exception e) {
+        }
+    
     }//GEN-LAST:event_lblEqualsMouseClicked
 
     private void lblDotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDotMouseClicked
@@ -688,25 +704,46 @@ public class FrmEjercicio5 extends javax.swing.JFrame {
     }//GEN-LAST:event_lblPlusMouseClicked
 
     private void lblErarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErarseMouseClicked
-    obj.setNum(null);
-    obj.setNum2(null);
-    indicador = 0;
+    if(indicador==0)
+    {
+    txtDisplay.setText( obj.getNum().substring(0,obj.getNum().length()-1));
+    obj.setNum(txtDisplay.getText());
+    }
+   
     }//GEN-LAST:event_lblErarseMouseClicked
 
     private void lblLessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLessMouseClicked
-    indicador = 1;
+    txtDisplay.setText("");
+        indicador = 1;
     operador=2;
     }//GEN-LAST:event_lblLessMouseClicked
 
     private void lblDivisionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDivisionsMouseClicked
-   indicador = 1;
+   txtDisplay.setText("");
+        indicador = 1;
     operador=3;
     }//GEN-LAST:event_lblDivisionsMouseClicked
 
     private void lblMultiplyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMultiplyMouseClicked
-     indicador = 1;
+     txtDisplay.setText("");
+        indicador = 1;
     operador=4;
     }//GEN-LAST:event_lblMultiplyMouseClicked
+
+    private void lblClearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblClearMouseClicked
+     
+        try {
+     
+    txtDisplay.setText("");
+     indicador = 0; 
+    obj.setNum(null);
+    obj.setNum2(null);
+   
+    
+        } catch (Exception e) {
+        }
+      
+    }//GEN-LAST:event_lblClearMouseClicked
 
     /**
      * @param args the command line arguments

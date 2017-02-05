@@ -23,6 +23,7 @@ public Double Resultado;
 
     public void setNum(String num) {
         this.num = num;
+        setNume(Double.parseDouble(this.num));
     }
 
     public String getNum2() {
@@ -31,6 +32,7 @@ public Double Resultado;
 
     public void setNum2(String num2) {
         this.num2 = num2;
+        this.setNume2(Double.parseDouble(this.num2));
     }
 
     public Double getNume() {
@@ -67,25 +69,25 @@ public Double Resultado;
     
     public double Suma(double num,double num2)
     {
-     this.Resultado = nume + nume2;
+     this.Resultado = num + num2;
      setMemoria(Resultado);
     return 0;
     }
     public double Resta(double num,double num2)
     {
-    this.Resultado = nume - nume2;
+    this.Resultado = num - num2;
     setMemoria(Resultado);
     return 0;
     }
     public double Multiplicacion(double num,double num2)
     {
-    this.Resultado = nume * nume2;
+    this.Resultado = num * num2;
     setMemoria(Resultado);
     return 0;
     }
     public double Divicion(double num,double num2)
     {
-    this.Resultado = nume / nume2;
+    this.Resultado = num / num2;
         setMemoria(Resultado);
     return 0;
     }
